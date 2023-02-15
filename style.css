@@ -8,9 +8,16 @@ body {
   max-width: 800px;
   min-width: 480px;
   margin: 0 auto;
-  background-color: #1e90ff;
+  background-image: linear-gradient(to right, #efe149, #7b9713);
 }
 
 body p {
-  background-color: #ff7f50;
+  background-color: #a8a3a1;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    margin: 0;
+    width: auto;
+  }
 }
