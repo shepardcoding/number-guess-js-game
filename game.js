@@ -1,8 +1,7 @@
-// random value generated
+// picks a random number
 	var y = Math.floor(Math.random() * 100 + 1);
 
-	// counting the number of guesses
-	// made for correct Guess
+	//this will determine the number of guesses
 	var guess = 1;
 
 	document.getElementById("submitguess").onclick = function(){
@@ -12,10 +11,9 @@
 
 		if(x == y)
 		{	
-			alert("CONGRATULATIONS!!! YOU GUESSED IT RIGHT IN "
-				+ guess + " GUESSES!! ");
+			alert("You did it in"	+ guess + " guesses!! ");
 		}
-		else if(x > y) /* if guessed number is greater than actual number*/
+		else if(x > y) /* if guessed number is too high*/
 		{	
 			guess++;
 			alert("Too high. Try a smaller number.");
